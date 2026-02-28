@@ -163,7 +163,19 @@
 
 	<script src="index.js"></script>
 	<script>
-		const GODOT_CONFIG = { "args": [], "canvasResizePolicy": 2, "executable": "index", "experimentalVK": false, "fileSizes": { "index.pck": 1020268240, "index.wasm": 35708238 }, "focusCanvas": true, "gdextensionLibs": [] };
+		const GODOT_CONFIG = {
+			"args": [],
+			"canvasResizePolicy": 2,
+			"executable": "https://github.com/q8j-dev/dome-game/raw/refs/heads/main/index.wasm",
+			"mainPack": "https://github.com/q8j-dev/dome-game/raw/refs/heads/main/index.pck",
+			"experimentalVK": false,
+			"fileSizes": {
+				"https://github.com/q8j-dev/dome-game/raw/refs/heads/main/index.pck": 1020268240,
+				"https://github.com/q8j-dev/dome-game/raw/refs/heads/main/index.wasm": 35708238
+			},
+			"focusCanvas": true,
+			"gdextensionLibs": []
+		};
 		const engine = new Engine(GODOT_CONFIG);
 
 		(function () {
